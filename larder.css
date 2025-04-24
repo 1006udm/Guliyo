@@ -31,20 +31,34 @@ h2 {
   background-color: #7F1F20;
   padding: 1em 2em;
   display: flex;
-  justify-content: flex-end;
-  gap: 2em;
+  justify-content: space-between;
+  align-items: center;
   z-index: 999;
   box-sizing: border-box;
 }
 
-.Topnav a {
+.nav-left a{
+  font-family:  "DM Serif Display", serif;
+  color: white;
+  font-weight: 600;
+  font-size:x-large;
+}
+.nav-right a {
   text-decoration: none;
   color: black;
   font-weight: 600;
   font-family: 'DM Mono', monospace;
+  margin-right: 2em;
 }
 
+.nav-right {
+  display: flex;
+  gap: 2em;
+}
 
+.Topnav a:hover {
+  color: whitesmoke;
+}
 .container1 {
   position: relative;
   /* Allow absolute positioning inside it */
