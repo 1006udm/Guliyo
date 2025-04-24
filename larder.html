@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="larder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Text:ital@0;1&family=Martian+Mono:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="Topnav">
+        <a href="larder.html">Shop</a>
+        <a href="#account">Account</a>
+        <a href="#cart" id="cartLink">Cart</a>
+    </div>
+    <div class="intro">
+        <img src="logo.JPG" alt="Art" class="intro_img">
+        <div class="intro_text">
+        
+           <h2> Guliyo</h2>   
+           <h4>
+        The Sweetness of Nepal 
+           </h4>
+        </div>
+    </div>
+
+
+    <div class="filter">
+
+        <div class="filter-buttons" style="flex-direction: column;">
+            <button data-filter="All">All</button>
+            <button data-filter="Alcohol">Alcohol</button>
+            <button data-filter="Dessert">Dessert</button>
+        </div>
+
+    </div>
+    <div class="producttype">
+
+
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Peda.jpg" alt="corn" class="product-image">
+                </div>
+                <h2 class="name">Peda</h2>
+                <h4 class="price"> Price: $7</h4>
+                <h5 class="Description"> A milk-based sweet made from khoa, sugar, and flavored with cardamom.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Bandar_laddu.jpg" alt="Laddu" class="product-image">
+                </div>
+                <h2 class="name">Bandar Laddu</h2>
+                <h4 class="price"> Price: $2.50</h4>
+                <h5 class="Description"> A laddu made from besan (chickpea flour), jaggery, and nuts.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Gulab_jamun.jpg" alt="gulabjamun" class="product-image">
+                </div>
+                <h2 class="name">Gulab Jamun</h2>
+                <h4 class="price"> Price: $14</h4>
+                <h5 class="Description"> Fried milk balls soaked in sweet syrup, such as rose syrup or honey.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Milk_Barfi.jpg" alt="kajibarfi" class="product-image">
+                </div>
+                <h2 class="name">Kaji Barfi</h2>
+                <h4 class="price"> Price: $13</h4>
+                <h5 class="Description"> A barfi made from cashews, ghee, and sugar.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Kulfi.jpg" alt="kulfi" class="product-image">
+                </div>
+                <h2 class="name">Kulfi</h2>
+                <h4 class="price"> Price: $6</h4>
+                <h5 class="Description"> An ice cream made with milk and sugar, available in various flavors such as
+                    mango, saffron, or cardamom.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Rasmalai.jpg" alt="red-velvet-cake" class="product-image">
+                </div>
+                <h2 class="name">Rasmalai</h2>
+                <h4 class="price"> Price: $18</h4>
+                <h5 class="Description"> Creamy and rich desi sweet dish made from chhena (cheese curds) soaked in
+                    malai (clotted cream) flavored with cardamom.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="yomari.jpg" alt="carrotcake" class="product-image">
+                </div>
+                <h2 class="name">Yomari</h2>
+                <h4 class="price"> Price: $16</h4>
+                <h5 class="Description"> Rice dumpling filled with khoa.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="selroti.jpg" alt="selroti" class="product-image">
+                </div>
+                <h2 class="name">Selroti</h2>
+                <h4 class="price"> Price: $12</h4>
+                <h5 class="Description"> Traditional homemade ring-shaped rice bread, crispy on the outside and soft inside.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product" data-tags="Dessert">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="GudPaak.jpg " alt="chocolatechip" class="product-image">
+                </div>
+                <h2 class="name">Gud-paak </h2>
+                <h4 class="price"> Price: $8</h4>
+                <h5 class="Description"> Classic cookies loaded with gooey chocolate chips</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-tags="Alcohol">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Jaad_mockup.JPG" alt="peanut" class="product-image">
+                </div>
+                <h2 class="name">Jaad</h2>
+                <h4 class="price"> Price: $8/dozen</h4>
+                <h5 class="Description">Newari alcoholic beverage, naturally fermented from rice or millet.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Alcohol">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="Ayla_Mockup.JPG" alt="double" class="product-image">
+                </div>
+                <h2 class="name">Alya</h2>
+                <h4 class="price"> Price: $25</h4>
+                <h5 class="Description">Newari spirit distilled from fermented rice, millet, or
+                    grains.</h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-tags="Drink">
+
+            <div class="productInformation">
+                <div class="square">
+                    <img src="lassi_mockup.JPG" alt="lassi" class="product-image">
+                </div>
+                <h2 class="name">Lassi</h2>
+                <h4 class="price">Price: $8</h4>
+                <h5 class="Description">
+                    A refreshing traditional yogurt-based drink, sweet or salted, served chilled.
+                </h5>
+                <button class="toCart">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+
+
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <div id="cartTotal"></div>
+        <button id="checkoutBtn">Checkout</button>
+        <button id="closeCartBtn">Close</button>
+    </div>
+    <footer>
+        <div class="container2">
+
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#support">FAQ</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="container3">
+            <div class="signUp">
+                <input type="text" id="Name" name="Name" placeholder="Name">
+                <input type="text" id="Email" name="Email" placeholder="Email">
+                <button> Sign up </button>
+            </div>
+
+        </div>
+        <div class="container2">
+
+            <ul>
+                <li><a href="#about">info@guliyo.com </a></li>
+                <li><a href="#support">+1 (805) 555-6666 </a></li>
+
+
+                <div class="follow-us">Follow us
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-pinterest-square"></i>
+                    <i class="fa fa-youtube-play"></i>
+
+                </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        document.querySelectorAll('.filter-buttons button').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter').toLowerCase();
+
+                document.querySelectorAll('.product').forEach(product => {
+                    const tags = product.getAttribute('data-tags').toLowerCase().split(' ');
+                    if (filter === 'all' || tags.includes(filter)) {
+                        product.classList.add('active');
+                    } else {
+                        product.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Trigger "All" filter on page load
+        document.querySelector('[data-filter="All"]').click();
+        // Open the Product Information
+        function openProductInfo() {
+            const overlay = document.getElementById('productInfoOverlay');
+            overlay.style.display = 'flex'; // Show the overlay
+            setTimeout(() => {
+                overlay.querySelector('.productInformation').classList.add('show'); // Animate in
+            }, 10);
+        }
+        document.querySelectorAll('.filter-buttons button').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter').toLowerCase();
+
+                document.querySelectorAll('.product').forEach(product => {
+                    const tags = product.getAttribute('data-tags').toLowerCase().split(' ');
+                    if (filter === 'all' || tags.includes(filter)) {
+                        product.classList.add('active');
+                    } else {
+                        product.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Trigger "All" filter on page load
+        document.querySelector('[data-filter="All"]').click();
+
+        // Cart array to store added items
+        let cart = [];
+
+        // Function to handle "Add to Cart" button click
+        document.querySelectorAll('.toCart').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const product = event.target.closest('.product');
+                const productName = product.querySelector('.name').textContent;
+                const productPrice = product.querySelector('.price').textContent.replace('Price: $', '');
+
+                // Create a product object to store
+                const productData = {
+                    name: productName,
+                    price: parseFloat(productPrice),
+                    quantity: 1
+                };
+
+                // Add the product to the cart
+                const existingProduct = cart.find(item => item.name === productData.name);
+                if (existingProduct) {
+                    existingProduct.quantity += 1; // Increase quantity if item is already in cart
+                } else {
+                    cart.push(productData); // Add new item if not already in cart
+                }
+
+                // Show notification
+                const notification = document.createElement('div');
+                notification.textContent = `${productName} added to cart`;
+                notification.classList.add('notification');
+                document.body.appendChild(notification);
+                setTimeout(() => notification.remove(), 2000);
+            });
+        });
+
+        // Function to update the cart popup display
+        function updateCartPopup() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = ''; // Clear existing cart items
+
+            let total = 0;
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+                cartItemsContainer.appendChild(listItem);
+                total += item.price * item.quantity;
+            });
+
+            // Update total
+            const cartTotal = document.getElementById('cartTotal');
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        // Show cart when "Cart" link is clicked
+        document.getElementById('cartLink').addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            updateCartPopup(); // Update the cart popup with the latest items
+            const cartPopup = document.getElementById('cartPopup');
+            cartPopup.style.display = 'block'; // Show the cart popup
+        });
+
+        // Hide the cart popup when "Close" button is clicked
+        document.getElementById('closeCartBtn').addEventListener('click', () => {
+            const cartPopup = document.getElementById('cartPopup');
+            cartPopup.style.display = 'none'; // Hide the cart popup
+        });
+
+        // Checkout functionality (optional)
+        document.getElementById('checkoutBtn').addEventListener('click', () => {
+            alert("Proceeding to checkout...");
+        });
+        
+    </script>
+</body>
+
+</html>

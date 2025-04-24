@@ -1,0 +1,564 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  font-family: "DM Serif Text", serif;
+  display: block;
+  align-items: center;
+  background-color: #f8f7f3;
+  justify-content: center;
+
+}
+
+
+h2 {
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+  color: #771D1E;
+  font-size: 2rem;
+}
+
+.Topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #7F1F20;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.Topnav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'DM Mono', monospace;
+}
+
+
+.container1 {
+  position: relative;
+  /* Allow absolute positioning inside it */
+  width: 100%;
+  height: 100vh;
+  /* Adjust based on your need */
+}
+
+.container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Make the video cover the entire container */
+}
+
+.overlay-text {
+  font-family: "DM Serif Text", serif;
+  position: absolute;
+  top: 50%;
+  /* Center the text vertically */
+  left: 50%;
+  /* Center the text horizontally */
+  transform: translate(-50%, -50%);
+  /* Adjust the position to perfectly center it */
+  font-size: 5em;
+  /* Adjust font size as necessary */
+  color: white;
+  /* Set the text color */
+  font-weight: bold;
+  /* Optional: make the text bold */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  /* Optional: Add a shadow to improve readability */
+  z-index: 1;
+  /* Ensure the text appears above the video */
+  }
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 15px
+}
+
+::-wedkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 10px;
+}
+
+.title {
+  color: #5C6AC4;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  gap: 2vw;
+  align-items: center;
+  overflow: hidden;
+
+  margin-bottom: 10vh;
+}
+
+.intro_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.intro_text h2 {
+  column-count: 3;
+  column-gap: 2em;
+  line-height: 1.6;
+  display: block;
+  font-family: "DM Serif Text", serif;
+  font-size: 15rem;
+}
+.intro_text h4 {
+  font-family: "DM Mono";
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.intro_img {
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  display: block;
+}
+.introButton{
+  background-color: transparent;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-size: 20px;
+  color: #771D1E;
+  border: 0;
+padding: 2vh;
+}
+.introButton:hover{
+  background-color: #771D1E;
+  color:whitesmoke;
+}
+.dm-mono-medium-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+.header {
+  width: 100vw;
+  height: 60vh;
+  ;
+  background-color: #f8f7f3;
+}
+
+.secondHeader {
+  font-family: "DM Serif Text", serif;
+  font-size: 6rem;
+
+}
+
+.filter {
+  margin-left: 60px;
+  padding: 1em;
+}
+
+button {
+  font-family: "Martian Mono";
+
+  border: none;
+  padding: 1px;
+  margin: 8px;
+
+}
+
+.filter-buttons {
+  flex-direction: row;
+}
+
+.filter-buttons button {
+  margin: 12px;
+}
+
+.filter-buttons button:hover {
+  background-color: #007BFF;
+  color: white;
+  border-color: #007BFF;
+}
+
+footer {
+  background-color: #7F1F20;
+  color: black;
+  display: flex;
+  align-items: end;
+  font-family: "DM Mono", monospace;
+  padding: 10px;
+  text-align: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.container2 {
+  flex: 1;
+  padding: 10px;
+}
+
+.container3 {
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.signUp {
+  flex: 3;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  gap: 25px;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.socials i {
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+hr {
+  border-top: 1px solid red;
+}
+
+footer input {
+  border: none;
+  width: 100%;
+  border-bottom: 3px solid black;
+  background: transparent;
+  font-size: 15px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  font-family: "dm", serif;
+}
+
+footer button {
+  background-color: transparent;
+  color: black;
+  opacity: 50%;
+  width: 80%;
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input {
+  color: black;
+  font-family: "DM Mono", monospace;
+}
+
+footer button:hover {
+  color: #ffffff;
+  opacity: 100%;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.follow-us {
+
+  padding: 0;
+  /* Removes any padding around the text */
+  text-align: center;
+  /* Aligns the text to the right */
+  width: 100%;
+  /* Makes sure the div takes up the full width of the container */
+  font-size: 12px;
+  gap: 25px;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+/* Add these styles to your CSS file (larder.css) */
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cartItems li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #7F1F20;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.mainmenu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.filter-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #7F1F20;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #555;
+}
+
+.producttype {
+  padding: 5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.product {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  padding: 1em;
+  display: none;
+  border: 2px solid;
+  border-color: #EFEEEACC; /* 'CC' = ~80% opacity in hex */
+
+}
+
+.product.active {
+  display: block;
+  /* Show active products */
+}
+
+
+.productInformation {
+  font-family: "DM Mono";
+  font-size: 10px;
+  animation: scaleAnimation 5s ease-in-out infinite alternate;
+
+}
+
+.product:active {
+  transform: 200%;
+}
+
+.name {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #771D1E;
+  font-size: 2rem;
+}
+
+.type {
+  font-family: "DM Serif Text", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #771D1E;
+  font-size: 2rem;
+}
+
+
+.square {
+  width: 95%;
+  aspect-ratio: 1 / 1; /* Makes it a square */
+  margin: 0 auto 10px;
+  overflow: hidden;
+  background-color: #3c2415;
+}
+
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Makes the image cover the square while maintaining aspect ratio */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.productInformation {
+  padding: 10px;
+}
+
+
+.productInformation h4 {
+  font-size: 1em;
+  color: #6F1B1C;
+}
+
+.productInformation h5 {
+  font-size:1em;
+  color: #555;
+}
+.toCart {
+  font-family: "DM Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  opacity: 90%;
+  margin-top: 10px;
+  color:  #7F1F20;
+  background-color: transparent;
+
+}
+/* Hover effect */
+.toCart:hover {
+  background-color:#7F1F20;
+  /* Slightly darker shade on hover */
+  color: white;
+  /* Darker text color on hover */
+  opacity: 100%;
+}
+
+
+
+
+.cart-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  font-family: 'DM Mono';
+}
+
+.cart-popup ul {
+  list-style: none;
+}
+
+.cart-popup h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cart-popup button {
+
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-popup button:hover {
+  background-color: #555;
+}
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*
+  
+  */

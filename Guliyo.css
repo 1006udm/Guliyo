@@ -1,0 +1,565 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* Stack elements vertically */
+  margin: 0;
+}
+
+h4 {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+  color: #771D1E;
+  font-size: 2rem;
+}
+
+.Topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #7F1F20;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.Topnav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'DM Mono', monospace;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  gap: 2vw;
+  align-items: center;
+  overflow: hidden;
+
+  margin-bottom: 10vh;
+}
+
+.intro_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.intro_text h4 {
+  column-count: 3;
+  column-gap: 2em;
+  line-height: 1.6;
+  display: block;
+}
+
+.intro_img {
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  display: block;
+}
+.introButton{
+  background-color: transparent;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-size: 20px;
+  color: #771D1E;
+  border: 0;
+padding: 2vh;
+}
+.introButton:hover{
+  background-color: #771D1E;
+  color:whitesmoke;
+}
+.dm-mono-medium-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.container1 {
+  position: relative;
+  /* Allow absolute positioning inside it */
+  width: 100%;
+  height: 100vh;
+  /* Adjust based on your need */
+}
+
+.Imgone,
+.ImgTwo,
+.ImgThree {
+  width: 100%;
+  /* Ensures the image takes up the full width of the container */
+  display: block;
+  /* Removes extra space below the image */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.OurStoryContainer {
+  flex-direction: row;
+  height: 80vh;
+  padding: 1em;
+  display: flex;
+  margin-top: 20vh;
+}
+
+.OurStoryContainer2 {
+  flex-direction: row;
+  height: 80vh;
+  padding: 1em;
+  display: flex;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+.Our-Story {
+  height: 20vh;
+  column-count: 2;
+  column-gap: 5rem;
+  text-align: justify;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.Our-Story h4 {
+  margin: 0;
+}
+
+
+
+.col-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  margin: 1em;
+  gap: 1em;
+  text-align: center;
+}
+
+.col-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Pushes content to the bottom */
+  border-radius: 2em;
+  margin: 1em;
+  gap: 1em;
+  position: relative;
+}
+
+/* Container for all products */
+.Products {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-bottom: 10vh;
+}
+
+.ProductsContainer2 {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-bottom: 10vh;
+  margin-top: 20vh;
+}
+
+/* Main product image */
+.Product_main {
+  flex: 4;
+  height: 100vh;
+  overflow: hidden;
+  /* Prevents image from overflowing */
+  position: relative;
+}
+
+.Product_main img {
+  height: 100vh;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Use 'cover' if you want it to fill the container and crop */
+  display: block;
+
+}
+
+/* Product description and secondary images */
+.product_description {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  padding-left: 2rem;
+}
+
+/* Container for secondary image squares */
+.product_description_img {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* space between image squares */
+  margin-top: 1em;
+}
+
+/* Wrapper for each secondary product image */
+.Product_secondary {
+  flex: 1;
+}
+
+/* Make square image containers */
+.square {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Secondary images fit square nicely */
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 180px; /* Adjust based on your tallest testimonial */
+}
+.testSub {
+  display: none;
+  padding: 2vh 5vw;
+  transition: opacity 0.5s ease;
+}
+
+.testSub.active {
+  display: block;
+}
+
+.carousel-buttons {
+  margin-top: 2vh;
+}
+
+.carousel-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  background-color: #f0c040;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.Ayla {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
+.Ayla_img {
+  display: flex;
+  flex: 2;
+}
+
+.Ayla_img img {
+  height: auto;
+  object-fit: contain;
+  /* makes sure images don’t stretch */
+  flex: 1;
+
+}
+
+.Ayla_description {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  /* aligns content to the bottom */
+}
+
+.Ayla_description h4 {
+  margin: 0;
+  text-align: justify;
+}
+
+.container4,
+.MilkandAlcohol_description {
+  flex-direction: row;
+  padding: 1em;
+  display: flex;
+
+}
+
+.container4 {
+  margin-bottom: 10vh;
+}
+
+.MilkandAlcohol {
+  margin-bottom: 10vh;
+  flex-direction: column;
+  padding: 1em;
+  display: flex;
+}
+
+.MilkandAlcohol button {
+  background-color: transparent;
+  color: black;
+  opacity: 80%;
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+  font-family: "DM Mono", monospace;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.MilkandAlcohol button:hover {
+  background-color: transparent;
+  color: #801F20;
+  opacity: 100%;
+
+}
+
+.blue {
+  flex: 3;
+  text-align: center;
+}
+
+.MilkandAlcohol_square {
+  width: 80%;
+  /* You can adjust this — keeps some margin */
+  aspect-ratio: 1 / 1.25;
+  margin: 0.5em auto;
+  /* Centers horizontally, adds spacing */
+  overflow: hidden;
+  /* Prevent image overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MilkandAlcohol_square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Maintains aspect but fills the square */
+  object-position: center;
+  /* Aligns image to the top */
+  display: block;
+}
+
+/*tea*/
+.tea {
+  margin-bottom: 10vh;
+  flex-direction: row;
+  padding: 1em;
+  display: flex;
+}
+
+.tea_description {
+
+  align-items: flex-end;
+  /* aligns content to the bottom */
+  text-align: center;
+}
+
+.red,
+.pink,
+.yellow,
+.white {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* vertical centering */
+  justify-content: end;
+  /* horizontal centering */
+  overflow: hidden;
+  flex-direction: column;
+}
+
+
+.Tea_square {
+  width: 80%;
+  /* You can adjust this — keeps some margin */
+  aspect-ratio: 1 / 1;
+  margin: 0.5em auto;
+  /* Centers horizontally, adds spacing */
+  overflow: hidden;
+  /* Prevent image overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tea_square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Maintains aspect but fills the square */
+  object-position: top;
+  /* Aligns image to the top */
+  display: block;
+}
+
+
+
+
+
+footer {
+  background-color: #7F1F20;
+  color: black;
+  display: flex;
+  align-items: end;
+  font-family: "DM Mono", monospace;
+  padding: 10px;
+  text-align: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.container2 {
+  flex: 1;
+  padding: 10px;
+}
+
+.container3 {
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.signUp {
+  flex: 3;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  gap: 25px;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.socials i {
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+hr {
+  border-top: 1px solid red;
+}
+
+footer input {
+  border: none;
+  width: 100%;
+  border-bottom: 3px solid black;
+  background: transparent;
+  font-size: 15px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  font-family: "dm", serif;
+}
+
+footer button {
+  background-color: transparent;
+  color: black;
+  opacity: 50%;
+  width: 80%;
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input {
+  color: black;
+  font-family: "DM Mono", monospace;
+}
+
+footer button:hover {
+  color: #ffffff;
+  opacity: 100%;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.follow-us {
+
+  padding: 0;
+  /* Removes any padding around the text */
+  text-align: center;
+  /* Aligns the text to the right */
+  width: 100%;
+  /* Makes sure the div takes up the full width of the container */
+  font-size: 12px;
+  gap: 25px;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
